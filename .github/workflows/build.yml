@@ -1,15 +1,14 @@
 name: build and test
 on:
-  push:
-    branches-ignore:
-      - 'dependabot/**'
-      - 'wip/**'
-      - 'draft/**'
   pull_request:
     types:
       - opened
       - synchronize
       - reopened
+    branches-ignore:
+      - 'dependabot/**'
+      - 'wip/**'
+      - 'draft/**'
     branches:
       - master
 
